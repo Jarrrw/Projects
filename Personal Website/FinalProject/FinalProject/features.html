@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Project Features – CPSC 3750</title>
+    <link rel="stylesheet" type="text/css" href="/Homepage/style.css">
+    <script type="text/javascript" src="/Homepage/navbar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style>
+        body {
+            position: relative;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            
+            background-color: #f9f9f9;
+            color: orange;
+        }
+        #navbarheader {
+            top: 0;
+            z-index: 3;
+        }
+        #back {
+            position: relative;
+            top: 0px;
+            z-index: 0;
+        }
+        h1, h2 {
+            position: relative;
+            color: orange;
+            top: 70px;
+            text-align: center;
+            
+            
+        }
+        h2 {
+            top: 20px;
+            text-align: left;
+        }
+        h3 {
+            position: relative;
+            top: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .section {
+            position: relative;
+            top: 30px;
+            margin-bottom: 30px;
+            width: 700px;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            font-family: Consolas, monospace;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="navbarheader"></div>
+    <h1>Features</h1>
+    <button id="back">Back</button>
+    <div class="section">
+        <h2>Front-End Changes</h2>
+        <h3>Login Page</h3>
+        <ul>
+            <li> Description: A page for the user to login to an already existing account. Also has links to create account and forget password pages</li>
+            <li> Status: Working</li>
+        </ul>
+        <h3>Sign Up Page</h3>
+        <ul>
+            <li> Description: The page for the user to create an account with an email, password, name, and security question answer</li>
+            <li> Status: Working</li>
+        </ul>
+        <h3>Change Password Page</h3>
+        <ul>
+            <li> Description: The page that the user can change the password to their account aslong as they get the security question right</li>
+            <li> Status: Working</li>
+        </ul>
+        <h3>Create Event Form</h3>
+        <ul>
+            <li> Description: The form that the user can create events with. Asked for info such as title, start time, end time, date, and description. Appears when the user clicks on a specific day on the calender</li>
+            <li> Status: Working</li>
+        </ul>
+        <h3>View Event Info</h3>
+        <ul>
+            <li> Description: This section displays all the information that the database has on the event. Appears when the user clicks on the event in the calender. This place also gives the user the option to delete an event</li>
+            <li> Status: Working</li>
+        </ul>
+        <h3>Calender</h3>
+        <ul>
+            <li> Description: Made it where the events that the user created display on the proper date in the calender. Also I made the calender go all the way to current dates.</li>
+            <li> Status: Working</li>
+        </ul>
+
+        <h2>Back-End Changes</h2>
+        <h3>Accounts Table Database</h3>
+        <ul>
+            <li> Description: Database that holds user information such as id, name, email, password, account creation time, last login time, number of logins, security question answer, and failed login attempts</li>
+            <li> Status: Working</li>
+        </ul>
+        <h3>Events Table Database</h3>
+        <ul>
+            <li> Description: Database that holds event information such as ID of the user who created event, day, month, year, start time, end time, description, and the eventID</li>
+            <li> Status: Working</li>
+        </ul>
+        <h3>Add Event</h3>
+        <ul>
+            <li> Description: PHP file that adds an event to the event database with all the information from the form submission</li>
+            <li> Status: Working</li>
+        </ul>
+        <h3>Delete Event</h3>
+        <ul>
+            <li> Description: PHP file that deletes an event from the events table based on the eventID</li>
+            <li> Status: Working</li>
+        </ul>
+        <h3>Add Account</h3>
+        <ul>
+            <li> Description: PHP file that adds an account to the account database if the email is not already in use and the required information is present.</li>
+            <li> Status: Working</li>
+        </ul>
+        <h3>Log In</h3>
+        <ul>
+            <li> Description: PHP file that gets the account associate with an email that the user entered. Then checks the password that the user inputted with the password of the retrieved account. If all is correct it sends the user to the calender page</li>
+            <li> Status: Working</li>
+        </ul>
+        <h3>Change Password</h3>
+        <ul>
+            <li> Description: PHP file that modifys the password of a specific users account in the database</li>
+            <li> Status: Working</li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        const urlParams = new URLSearchParams(window.location.search);
+        const userID = urlParams.get('id');
+
+        document.getElementById("back").addEventListener("click", function() {
+            window.location.href = "showcalendar_inJS.html?id=" + userID;
+        })
+    </script>
+</body>
+</html>

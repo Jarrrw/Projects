@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button Move</title>
+    <link rel="stylesheet" type="text/css" href="/prog06/ButtonMove.css">
+    <link rel="stylesheet" type="text/css" href="/Homepage/style.css">
+    <script type="text/javascript" src="ButtonMove.js"></script>
+    <script type="text/javascript" src="/Homepage/navbar.js"></script>
+    
+  </head>
+  <body>
+
+    <div id="navbarheader"></div>
+
+    <div class="control" id="control">
+        <button onclick="makeButton()">Make Button</button>
+        <button id="start" onclick="toggleMovement()">Move</button>
+        <p style="display: inline;">Running Count: </p>
+        <p id="count" style="display: inline;">0</p>
+        <br>
+        <select id="list">
+            <option>Red</option>
+            <option>Green</option>
+            <option>Blue</option>
+            <option>Yellow</option>
+            <option>White</option>
+        </select>
+    </div>
+    <div class="view" id="view"></div>
+
+  </body>
+</html>

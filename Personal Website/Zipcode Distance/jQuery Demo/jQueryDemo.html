@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Demo</title>
+    <link rel="stylesheet" type="text/css" href="/Homepage/style.css">
+    <script type="text/javascript" src="/Homepage/navbar.js"></script>
+    <style>
+        #navbarheader {
+            z-index: 3;
+        }
+        h1 {
+            position: relative;
+            top: 70px;
+            left: -50px;
+        }
+        button {
+            margin-top: 50px;
+        }
+
+        #progressbar {
+            position: fixed;
+            width: 300px;
+            height: 25px;
+            margin-top: 20px;
+            background-color: blue;
+            top: 200px;
+            left: 960px;
+        }
+    </style>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    
+
+    <script>
+        $(document).ready(function () {
+            // Your jQuery code here
+
+            $("#fade1").click(function(){
+                $("#div1").fadeToggle(1000)
+            });
+            $("#fade2").click(function(){
+                $("#div2").fadeToggle(1000)
+            });
+            $("#fade3").click(function(){
+                $("#div3").fadeToggle(1000)
+            });
+
+            $("#div1").mouseover(function(){
+                $("#div1").css("background-color", "yellow");
+            });
+            $("#div1").mouseleave(function(){
+                $("#div1").css("background-color", "white");
+            });
+            $("#div2").mouseover(function(){
+                $("#div2").css("background-color", "yellow");
+            });
+            $("#div2").mouseleave(function(){
+                $("#div2").css("background-color", "white");
+            });
+            $("#div3").mouseover(function(){
+                $("#div3").css("background-color", "yellow");
+            });
+            $("#div3").mouseleave(function(){
+                $("#div3").css("background-color", "white");
+            });
+
+            $("#datepicker").datepicker({
+              dateFormat: "mm/dd/yy", // Change date format
+              changeMonth: true, // Allow changing months
+              changeYear: true, // Allow changing years
+              minDate: 0, // Disable past dates
+              maxDate: "+1Y", // Limit selection to next year
+            });
+            $( function() {
+              $( "#accordion" ).accordion();
+            } );
+
+            $("#progressbar").progressbar({ value: 0 });
+
+            let duration = 20; // Total seconds
+            let interval = 1000; // Update every second
+            let progress = 0;
+            let step = 100 / duration; // Increment step per second
+
+            function startProgress() {
+                let progress = 0;
+                let timer = setInterval(function() {
+                    progress += step;
+                    $("#progressbar").progressbar("value", progress);
+
+                    if (progress >= 100) {
+                        clearInterval(timer);
+                        setTimeout(startProgress, 1000); // Restart after 1 second
+                    }
+                }, interval);
+            }
+
+            startProgress();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="navbarheader"></div>
+  
+    <h1>jQuery Demo</h1>
+    <br>
+    <br>
+    <br>
+    <p style="position:relative; left: 19%" id="description"> This page demonstrates jQuery functions interacting with the DOM of a webpage</p>
+    <button id="fade1">fade div1</button>
+    <button id="fade2">fade div2</button>
+    <button id="fade3">fade div3</button>
+    <p>This is a paragraph.</p>
+
+    <div id="div1" style="border: 1px solid black; padding: 10px; margin-bottom: 10px;">
+        <p>A paragraph in a div.</p>
+    </div>
+
+    <div id="div2" style="border: 1px solid black; padding: 10px; margin-bottom: 10px;">
+        <p>A paragraph in another div.</p>
+    </div>
+
+    <div id="div3"style="border: 1px solid black; padding: 10px;">
+        <p>A paragraph in another div.</p>
+    </div>
+
+    <p>Date: <input type="text" id="datepicker"></p>
+
+    <div id="accordion">
+      <h3>Section 1</h3>
+      <div>
+        <p>
+        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+        </p>
+      </div>
+      <h3>Section 2</h3>
+      <div>
+        <p>
+        Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+        purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+        velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+        suscipit faucibus urna.
+        </p>
+      </div>
+      <h3>Section 3</h3>
+      <div>
+        <p>
+        Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+        Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+        ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+        lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+        </p>
+        <ul>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+        </ul>
+      </div>
+      <h3>Section 4</h3>
+      <div>
+        <p>
+        Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+        et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+        faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+        mauris vel est.
+        </p>
+        <p>
+        Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+        inceptos himenaeos.
+        </p>
+      </div>
+    </div>
+    <br>
+    <br>
+    
+    <div id="progressbar"></div>
+
+
+</body>
+
+</html>

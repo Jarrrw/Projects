@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <title>prog04</title>
+    <link rel="stylesheet" type="text/css" href="../../Homepage/style.css">
+    <link rel="stylesheet" type="text/css" href="../prog04/prog04.css">
+    <script type="text/javascript" src="prog04.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="content">
+          <div class="logo"><a href="#">Jarrett</a></div>
+          <ul class="links">
+            <li><a href="/index.html">Home</a></li>
+              <li>
+                <a href="#">Past Assignments</a>
+                <ul>
+                  <li><a href = "../American Revolution/AmericanRevolution.html">American Revolution</a></li>
+                  <li><a href = "../GroupCSS1/GroupCSS1.html">GroupCSS1</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Assignments</a>
+                <ul>
+                  <li><a href = "../GroupCSS2/GroupCSS2.html">GroupCSS2</a></li>
+                  <li><a href = "../layout/layout.html">Fluid Hybrid Layout</a></li>
+                  <li><a href = "../prog04/prog04.html">prog04</a></li>
+                  <li><a href = "../bandstore/index.html">bandstore</a></li>
+                  <li><a href = "/prog06/ButtonMove.html">prog06</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"> More Assignments</a>
+                <ul>
+                  <li><a href = "/prog07/SortDemo.html">Sort Demo</a></li>
+                  <li><a href = "/Card Object/CardObject.html">Card Object</a></li>
+                  <li><a href = "/GroupEvents/GroupEvents.html">Group Events</a></li>
+                  <li><a href = "/GroupAudio/GroupAudio.html">Group Audio</a></li>
+                </ul>
+
+              </li>
+              
+              <li>
+                <a href="#">Major Projects</a>
+                <ul>
+                  <li><a href = "#">Dropmenu 1</a></li>
+                  <li><a href = "#">Dropmenu 1</a></li>
+                </ul>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- When you click these buttons it calls changeColor which changes the
+     background to the color passed in as a parameter-->
+    <!-- This html also calls the function switch color to reverse the color of
+     each button when you hover over them and then it reverses back when you hover
+     off the code-->
+    <button id="red" class="button" onclick="changeColor('red');" 
+    onmouseover="switchColor('red');"
+    onmouseleave="switchBack('red');">RED</button>
+
+    <button id="green" class="button" onclick="changeColor('green');"
+    onmouseover="switchColor('green');"
+    onmouseleave="switchBack('green');">GREEN</button>
+
+    <button id="blue" class="button" onclick="changeColor('blue');"
+    onmouseover="switchColor('blue');"
+    onmouseleave="switchBack('blue');">BLUE</button>
+    <br>
+
+    <!-- This div is the counter that shows how many times a background changes
+     to a specific color-->
+    <div style = "display: flex;">
+        <p>RED count:</p>
+        &ensp;
+        <p id="red_counter">0</p>
+
+        <p style="margin-left: 4%;">GREEN count:</p>
+        &ensp;
+        <p id="green_counter">0</p>
+
+        <p style="margin-left: 4%;">BLUE count:</p>
+        &ensp;
+        <p id="blue_counter">0</p>
+    </div>
+    
+    <!-- This div shows the amount of times the each buttons change color-->
+    <div style = "display: flex;">
+        <p>RED Change:</p>
+        &ensp;
+        <p id="red_change">0</p>
+
+        <p style="margin-left: 3%;">GREEN Change:</p>
+        &ensp;
+        <p id="green_change">0</p>
+
+        <p style="margin-left: 3%;">BLUE Change:</p>
+        &ensp;
+        <p id="blue_change">0</p>
+    </div>
+
+
+  </body>
+</html>

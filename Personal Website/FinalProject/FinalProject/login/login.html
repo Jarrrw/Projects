@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log in</title>
+    <link rel="stylesheet" type="text/css" href="/Homepage/style.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script type="text/javascript" src="/Homepage/navbar.js"></script>
+    
+  </head>
+  <body>
+    <div id="navbarheader"></div>
+    <div id="login">
+        <h2 id="title">Log In</h2>
+        <p id="title">to start collecting</p>
+        <div id="error" class="hidden"><p id="errorText">Invalid Email</p></div>
+        <form action="login.php" method="POST">
+            <label for="email" class="input">email</label> <br>
+            <input type="text" name="email" id="emailInput" class="input"><br><br>
+
+            <label for="password" class="input">password</label><br>
+            <input type="password" class="input" name="password" id="passwordInput">
+
+            <button type="submit" id="passwordChange" class="input">Log In</button>
+        </form>
+        <a href="password.html" id="forget">Forget Password?</a>
+        <br>
+        <a href="signup.html" id="createAccount">Don't have an account? Sign up now!</a>
+    </div>
+    <script type="text/javascript">
+      const urlParams = new URLSearchParams(window.location.search);
+      const query = urlParams.get('query');
+      if (query == "no") {
+        document.getElementById("error").className = ""
+      }
+      else if (query == "yes") {
+        var div = document.getElementById("error");
+        div.className = "";
+        var text = document.getElementById("errorText")
+        text.innerText = "Account Created, Please Login";
+      }
+      else if (query == "si") {
+        var div = document.getElementById("error");
+        div.className = "";
+        var text = document.getElementById("errorText")
+        text.innerText = "Password Changed, Please Login";
+      }
+      else if (query == "nope") {
+        var div = document.getElementById("error");
+        div.className = "";
+        var text = document.getElementById("errorText")
+        text.innerText = "Password Incorrect";
+      }
+      else if (query == "lock") {
+        var div = document.getElementById("error");
+        div.className = "";
+        var text = document.getElementById("errorText")
+        text.innerText = "Account Locked, Please Change Password";
+      }
+    </script>
+  </body>
+  
+</html>

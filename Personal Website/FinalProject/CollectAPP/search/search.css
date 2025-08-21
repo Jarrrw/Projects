@@ -1,0 +1,188 @@
+#navbarheader {
+    top: 0px;
+    z-index: 3;
+}
+
+#searchPage {
+    position: absolute;
+    top:50px;
+    left: 34%;
+    width: 380px;
+    text-align: left;
+    
+}
+p{
+    text-indent: 0px;
+    cursor:default;
+}
+/* 
+    This is the code for the header of the search page.
+*/
+h1 {
+    position: relative;
+    top: 60px;
+    left: 19%;
+    
+    width: 220px;
+}
+
+/* 
+    This is the code for the search bar and the buttons.
+*/
+#navbar {
+    position: relative;
+    color:white;
+    width: 500px;
+    top: 90px;   
+    left: 30%;
+    text-align: center;
+    height: fit-content;
+    display:flex;
+    
+}
+
+
+
+/*
+    This styles the search div that holds the search input field
+*/
+#searchField {
+    position: relative;
+    left: 0%;
+    top: 35px;
+    width: fit-content;
+    width: 400px;
+    z-index: 2;
+}
+
+/*
+    This is the styles for the search input field
+*/
+#movieSearch {
+    position: relative;
+    font-size: larger;
+    left: 19%;
+    width: 220px;
+    
+    
+}
+
+/*
+    This is the styling for the movie cover that appears in the search results
+*/
+img {
+    position: relative;
+    width: 100px;
+}
+
+/* This is the styling for the title of the movie that appears in the search results*/
+#title {
+    position: absolute;
+    left: 110px;
+    top: -20px;
+    text-indent: 0;
+    font-size: 15px;
+    text-align: left;
+}
+
+#detail {
+    text-indent: 0px;
+    font-size: 15px;
+    
+}
+
+/* This is the styling for the div that holds all the responses*/
+#response {
+    position: absolute;
+    left: 33.5%;
+    top: 130px;
+    width: 400px;
+    
+    z-index: 0;
+}
+
+/* This is the div that will represent each movie*/
+#movie {
+    position: relative;
+    top: 140px;
+    left: 0%;
+    height: 200px;
+    width: 400px;
+    height: 145px;
+    border: 2px solid black;
+}
+/* This is the styling for the years that appear for each movie and show*/
+#year {
+    height: 0;
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* This is the styling for the content rating for each movie and show*/
+#contentRating {
+    position: absolute;
+
+    top: 70px;
+    left: 60px;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    height: 0;
+}
+
+/* This is the style for the button that will take the user to more information*/
+#button {
+    position: absolute;
+    left: 180px;
+    top: 50px;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    width: 100px;
+}
+
+#noResults {
+    text-align: center;
+}
+
+#aboutPage {
+    position: absolute;
+    top: 50px;
+    
+    width: 32%;
+    left: 1%;
+    
+    
+}
+
+#statsPage {
+    position: absolute;
+    top: 400px;
+    left: 0%;
+    width: 35%;
+    
+}
+
+#favoriteButton {
+    position: absolute;
+    top: 70px;
+    left: 180px;
+}
+
+#collectionPage {
+    position: absolute;
+    left: 66%;
+    top: 50px;
+}
+
+#admin {
+    position: absolute;
+    top: 110px;
+    left: 500px;
+    width: 380px;
+    z-index: 2;
+}
