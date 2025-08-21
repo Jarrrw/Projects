@@ -1,0 +1,32 @@
+#navbarheader {
+    margin-top: -70px;
+    z-index: 4;
+}
+.control {
+    background-color: gray;
+    margin-top: 90px;
+    height: fit-content;
+}
+.view {
+    position: absolute;
+    height: calc(100% - 111.25px);
+    width: 100%;
+    background-color: white;
+    margin-top: 0px;
+    z-index: 0;
+}
+
+p{
+    text-indent: 0px;
+}
+
+#head {
+    position: absolute;
+    top: 60px;
+    left: 40%;
+}
+
+#description {
+    position: absolute;
+    left: 15%;
+}

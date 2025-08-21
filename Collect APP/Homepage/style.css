@@ -1,0 +1,58 @@
+body {
+    background-color: white;
+    color: orange;
+    margin: 0;
+    margin-top: -22px;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    position: relative;
+    top: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 80px;
+    z-index: -2;
+    
+    
+}
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-indent: 50px;
+    text-wrap: wrap;
+    
+}
+aside {
+    float: right;
+}
+
+.paragraph_footer {
+    text-align: center;
+    color: orange;
+    border-top: 0px;
+
+}
+
+nav {
+    float:left;
+}
+
+footer {
+    text-align: center;
+    border-top: 3px solid orange;
+    height: 10%;
+}
+
+.navigation{
+    border-style:solid;
+    padding-right: 20px;
+    
+}
+

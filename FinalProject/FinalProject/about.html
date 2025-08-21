@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Project About – CPSC 3750</title>
+    <link rel="stylesheet" type="text/css" href="/Homepage/style.css">
+    <script type="text/javascript" src="/Homepage/navbar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style>
+        body {
+            position: relative;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            
+            background-color: #f9f9f9;
+            color: orange;
+        }
+        #navbarheader {
+            top: 0;
+            z-index: 3;
+        }
+        #back {
+            position: relative;
+            top: 0px;
+            z-index: 0;
+        }
+        h1, h2 {
+            position: relative;
+            color: orange;
+            top: 70px;
+            text-align: center;
+            
+            
+        }
+        h2 {
+            top: 20px;
+            text-align: left;
+        }
+        h3 {
+            position: relative;
+            top: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .section {
+            position: relative;
+            top: 30px;
+            margin-bottom: 30px;
+            width: 700px;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            font-family: Consolas, monospace;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="navbarheader"></div>
+    <h1>Team About Page</h1>
+    <button id="back">Back</button>
+    <div class="section">
+        <h3>Jarrett Wilson</h3>
+        <ul>
+            <li> Contributions: All of it</li>
+            <li> Email: jwils46@clemson.edu</li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        const urlParams = new URLSearchParams(window.location.search);
+        const userID = urlParams.get('id');
+
+        document.getElementById("back").addEventListener("click", function() {
+            window.location.href = "showcalendar_inJS.html?id=" + userID;
+        })
+    </script>
+</body>
+</html>

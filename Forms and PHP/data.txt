@@ -1,0 +1,1 @@
+{"name":"Jarrett","age":"22","birthday":"2025-03-06","job":"Software","animal":"Dogs","personType":"Morning","season":"Fall","hobby":"Games","introvert":"Introvert","genre":"Fiction"}

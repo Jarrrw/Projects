@@ -1,0 +1,57 @@
+#navbarheader {
+   position: relative;
+   top: 0;
+   left: 0;
+   z-index: 3;
+   text-align: left;
+}
+
+#game {
+   position: relative;
+   text-align: center;
+   top: 70px;
+   align-items: center;
+   width: 600px;
+   height: 140px;
+   align-content: center;
+   left: 15%;
+   
+   z-index: 0;
+}
+body {
+   font-family: Arial, sans-serif;
+   text-align: center;
+   ;
+}
+
+#wordToGuess {
+   margin: 20px;
+   font-size: 24px;
+}
+
+#Names {
+   position: relative;
+   top: 0px;
+   left: 33%;
+   
+}
+
+#letters {
+   position: relative;
+   width: 250px;
+   left: 100%;
+   top: -270px;
+}
+
+#letters button {
+   margin: 5px;
+   padding: 10px;
+   width: 40px;
+   align-self: center;
+}
+
+.hidden {
+   visibility: hidden;
+}
+
+

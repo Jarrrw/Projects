@@ -1,0 +1,28 @@
+#gameBoard {
+    position: absolute;
+    height: 70%;
+    width: 600px;
+    top: 150px;
+    left: 43%;
+    background-color: orange;
+    z-index: 0;
+}
+
+#col {
+    position: absolute;
+    height: 100%;
+    width: 14.2857143%;
+    border: 2px solid black;
+    z-index: 3;
+}
+.space {
+    position: relative;
+    border: 2px solid black;
+    left: 27%;
+    top: 0px;
+    margin-top: 18px;
+    background-color: white;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+}

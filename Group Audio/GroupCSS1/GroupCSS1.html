@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/Homepage/style.css">
+
+    <title>GroupCSS1</title>
+    <style type="text/css">
+        p {
+          text-indent: 0px;
+        }
+        /* Background Color change */
+        .Background_Color { 
+          background-color: yellow;
+          padding-top: 6%;
+        }
+
+        /* Font Color Change */
+        .Font_Color { color:blue; }
+
+        /*Background Image Change*/
+        .Background_Image {
+            background-image: url("download.jpg");
+            color: white;
+            padding-bottom: 100px;
+            max-width: fit-content;
+        }
+        /*Background Image Repeat*/
+        .Background_Repeat {
+            background-image: url("download.jpg");
+            background-repeat: repeat-y;
+            padding-bottom: 350px;
+            color: white;
+        }
+        /*Makes the image an attachment*/
+        .Background_Fixed {
+            background-image: url("download.jpg");
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment:local;
+            padding-bottom: 100px;
+
+        }
+        /*Changed the border style to dotted*/
+        .Border_Style_Change {
+            border-style: dashed;
+        }
+        /*Changed the width of the border around the text*/
+        .Border_Width_Change {
+            border-style: solid;
+            border-width: 50px;
+        }
+        /*Changed the color of the border*/
+        .Border_Color_Change {
+            border-style: solid;
+            border-color: green;
+        }
+
+        /*Border Sides Change*/ 
+        .Border_Side_Change {
+            border-style: solid;
+            border-width: 20px;
+            border-top-color: blueviolet;
+            border-left-color: black;
+            border-right-color:cadetblue;
+            border-bottom-color: brown;
+        }
+        
+        /*Makes the border round*/
+        .Border_Rounded{
+            border-style: solid;
+            border-width: 5px;
+            border-radius: 20px;
+        }
+
+        /*Margins Changed*/
+        .Margin_Changed {
+            margin-left: 80px;
+        }
+
+        /*Padding Changed*/
+        .Padding_Changed {
+            padding-left: 350px;
+        }
+
+        /*Height Changed*/
+        .Height_Changed {
+            height: 100px;
+            width:fit-content;
+            background-color: aquamarine;
+        }
+        /*Border Change*/
+        .Width_Changed {
+            background-color: chocolate;
+            width: 1000px;
+        }
+        </style>
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="content">
+          <div class="logo"><a href="#">Jarrett</a></div>
+          <ul class="links">
+            <li><a href="/index.html">Home</a></li>
+              <li>
+                <a href="#">Past Assignments</a>
+                <ul>
+                  <li><a href = "../American Revolution/AmericanRevolution.html">American Revolution</a></li>
+                  <li><a href = "../GroupCSS1/GroupCSS1.html">GroupCSS1</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Assignments</a>
+                <ul>
+                  <li><a href = "../GroupCSS2/GroupCSS2.html">GroupCSS2</a></li>
+                  <li><a href = "../layout/layout.html">Fluid Hybrid Layout</a></li>
+                  <li><a href = "../prog04/prog04.html">prog04</a></li>
+                  <li><a href = "../bandstore/index.html">bandstore</a></li>
+                  <li><a href = "/prog06/ButtonMove.html">prog06</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"> More Assignments</a>
+                <ul>
+                  <li><a href = "/prog07/SortDemo.html">Sort Demo</a></li>
+                  <li><a href = "/Card Object/CardObject.html">Card Object</a></li>
+                  <li><a href = "/GroupEvents/GroupEvents.html">Group Events</a></li>
+                  <li><a href = "/GroupAudio/GroupAudio.html">Group Audio</a></li>
+                </ul>
+
+              </li>
+              
+              <li>
+                <a href="#">Major Projects</a>
+                <ul>
+                  <li><a href = "#">Dropmenu 1</a></li>
+                  <li><a href = "#">Dropmenu 1</a></li>
+                </ul>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    
+    <p class=Background_Color>Background Color Change</p>
+    <p class=Font_Color> Font Color Change</p>
+    <p class=Background_Image> Background Image Change</p>
+    <p class=Background_Repeat>Background Repeat</p>
+    <p class=Background_Fixed>Background Attachment ----></p>
+    <p class="Border_Style_Change">Border Style Change</p>
+    <p class="Border_Width_Change">Border Width Change</p>
+    <p class="Border_Color_Change">Border Color Change</p>
+    <p class="Border_Side_Change">Border Side Change</p>
+    <p class="Border_Rounded">Border Rounded</p>
+    <p class="Margin_Changed">Margins Changed</p>
+    <p class="Padding_Changed">Padding Changed</p>
+    <p class="Height_Changed">Height Changed</p>
+    <p class="Width_Changed">Width Changed</p>
+
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Project Proposal – CPSC 3750</title>
+    <link rel="stylesheet" type="text/css" href="/Homepage/style.css">
+    <script type="text/javascript" src="/Homepage/navbar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style>
+        body {
+            position: relative;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            
+            background-color: #f9f9f9;
+            color: orange;
+        }
+        #navbarheader {
+            top: 0;
+            z-index: 3;
+        }
+        #back {
+            position: relative;
+            top: 100px;
+            z-index: 0;
+        }
+        h1, h2 {
+            position: relative;
+            color: orange;
+            top: 70px;
+            text-align: center;
+            
+            
+        }
+        h2 {
+            top: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .section {
+
+            margin-bottom: 30px;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            font-family: Consolas, monospace;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="navbarheader"></div>
+    <button id="back">Back to Calendar</button>
+    <h1>Team Project Proposal</h1>
+    <h2>CPSC 3750 – Web App Development</h2>
+
+    <div class="section">
+        <h3>Team Members</h3>
+        <ul>
+            <li>Jarrett</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Chosen Base App</h3>
+        <p>We selected the <strong>Simple Display Calender</strong> from the textbook. It includes features such as picking a month and year from 1990 to 2020 and returning the correct calender from that montha and year.</p>
+
+        <!-- OR -->
+
+        <p><strong>We are proposing an original app:</strong> Calender App. It is an app that will act as a planner with features similar in scope to the textbook examples.</p>
+    </div>
+
+    <div class="section">
+        <h3>Project Overview</h3>
+        <p>Our application will allow users to add events to the calender, click on the event to view more info, and if they click on the on a specific day the add event form will appear with date already inputted</p>
+    </div>
+
+    <div class="section">
+        <h3>Proposed Enhancements</h3>
+        <p>In addition to implementing the base app, we plan to make the following improvements and changes:</p>
+        <ul>
+            <li><strong>HTML:</strong> New form to enter events and display the event on the calender and display view more info</li>
+            <li><strong>CSS:</strong> Style the view more info blocks, the form that user enters events, and how the events will display in the calender</li>
+            <li><strong>JavaScript:</strong> Form Validation and getting the information for the calender</li>
+            <li><strong>PHP:</strong> Calling the databases that hold the events and the user account information</li>
+            <li><strong>Database:</strong> Search Functionality, Account Tables, Events Table</li>
+            <li><strong>Authentication:</strong> Login/Logout with password hashing and optional user roles (e.g., user/admin)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Division of Labor</h3>
+        <ul>
+            <li><strong>Jarrett Wilson:</strong> Everything</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Timeline</h3>
+        <ul>
+            <li>Week 1 (due April 08 2PM): Base app implemented, proposal presented</li>
+            <li>Week 3 (due April 22 2PM): Complete enhancements, demo to instructor</li>
+            <li>Week 4 (due April 27 EOD): Polish UI and prepare for class demo</li>
+            <li>Week 5 (due Final Exam): Give a polished demo of your team's app</li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        const urlParams = new URLSearchParams(window.location.search);
+        const userID = urlParams.get('id');
+        $("#back").click(function() {
+        window.location.href = "showcalendar_inJS.html?id=" + userID;
+    })
+    </script>
+</body>
+</html>
