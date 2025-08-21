@@ -1,0 +1,3 @@
+"id","accountType","active","address","card_number","email","language","lastActive","notification","password","userName"
+"1","Business","Inactive","350 New York Dr","5404885801798948","johnwick03@gmail.com","Spanish","2023-09-14T15:28:10.000Z","Email","ILOVEMYDOG","John Wick"
+"5","Customer","Active","123 Dome Dr","5404885801798948","sandyC@krustykrab.com","English","2023-09-14T15:28:10.000Z","Email","IL0v3T3x@s","Sandy Cheeks"
