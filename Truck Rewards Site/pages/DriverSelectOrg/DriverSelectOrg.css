@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: var(--muted-background);
+  height: 100vh;
+}
+
+h1 {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  text-align: center;
+}
+
+#org_div {
+    border: 2px solid var(--revvy-black);
+    width: 85%;
+    height: 360px;
+    cursor: pointer;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+#org-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px); /* auto-adjusts columns */
+    justify-content: center;
+    margin: 120px auto 0;
+}
+
+#org_title {
+    display: grid;
+    text-align: center;
+    font-size: 250%;
+    margin: 24px;
+    height: 120px;
+    align-items: center;
+    font-weight: 650;
+}
+
+.usr_points {
+    text-align: center;
+    position: relative;
+    top: 10px;
+    background-color: var(--revvy-green);
+    border-bottom: 4px solid var(--revvy-black);
+    border-right: 4px solid var(--revvy-black);
+    width: 200px;
+    border-radius: 10px;
+    justify-self: center;
+    padding: 12px;
+}
+
+.points-label {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.points-value {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#org_div .leave-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+}
+
+.leave-btn {
+  padding: 6px 10px;
+  background-color: #E7465B;
+  border-radius: 10px;
+  border-bottom: 3px solid var(--revvy-black);
+  border-right: 3px solid var(--revvy-black);
+  font-weight: 700;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.leave-btn:hover { background-color: #fff; }
+.leave-btn:disabled { opacity: .6; cursor: not-allowed; }

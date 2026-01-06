@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Portal</title>
+  <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="driver.css">
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <script type="text/javascript" src="driver.js"></script>
+  <script src="delete_driver.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="../../index.html"><img class="brand-logo" src="../../assets/car-logo-flipped.png"></a>
+          <a href="../../index.html"><img class="brand-name" src="../../assets/revvy.png"></a>
+        </div>
+        <ul id="links">
+          <li><a href="../about/about.html" id="aboutPage">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="main">
+    <h1 id="greeting" class="greeting-title"></h1>
+    <h3 class="greeting-desc">Welcome back to your dashboard. You're doing great!</h3>
+    <div class="driver-card">
+      <div class="profile-icon"><i class='bx  bx-user-circle' style='color:#1ED760'></i> </div>
+      <div class="driver-info">
+        <h2 id="name"></h2>
+        <p id="usrID"></p>
+        <p id="email"></p>
+        <div class="org-role">
+          <p>Organization: <span id="org" class="org-name"></span></p>
+          <p>Role: <span id="role" class="role-name"></span></p>
+        </div>
+      </div>
+
+      <div class="points-card">
+        <span><i class='bx  bxs-star'></i>Total Points</span>
+        <h1 id="balance"></h1>
+        <p id="balance-dollars"></p>
+      </div>
+    </div>
+
+    <div class="points-history" id="rule_list">
+      <h3>Organization Rules</h3>
+      <ul id="list-rule"></ul>
+    </div>
+
+    <div class="history">
+      <div class="points-history">
+        <a href="driver-points/driver-points.html" class="points-header">
+          <h3>Recent Points Transactions</h3>
+          <p>Here's how you've been earning and using your points</p>
+        </a>
+        <div class="points-content">
+          <div id="recentTransactions"></div>
+          <div class="transaction"></div>
+        </div>
+      </div>
+
+      <div class="order-history">
+        <a href="driver-orders/driver-orders.html" class="orders-header">
+          <h3>Recent Orders</h3>
+          <p>Your latest rewards - enjoy them!</p>
+        </a>
+        <div class="orders-content">
+          <div id="recentOrders"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  <div id="test2"></div>
+
+  <footer>
+    <p class="copyright">© 2025 Revvy | Team 04</p>
+  </footer>
+
+  <!-- <br><br>
+  <form id = "delete" >
+    <input type="submit" value="Delete Account">
+  </form>
+
+  <form id = "test">
+    <br>
+    <label for="usrID">Enter Account Num:<br></label>
+    <input type="text" id="usrID" name="usrID"><br><br>
+    <input type="submit" value= "confirm">
+  </form> -->
+
+
+</body>
+
+</html>
